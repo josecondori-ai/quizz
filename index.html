@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz de HTML y CSS por Grupos</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quiz de HTML y CSS</h1>
+    <div class="quiz-box">
+      <div id="question-container">
+        <p id="group-person-name"></p>
+        <p id="question-text"></p>
+      </div>
+      <div id="timer">20</div> <!-- Temporizador -->
+      <button id="next-button" onclick="generateQuestion()">Siguiente pregunta</button>
+      <button id="stop-button" onclick="stopTimer()">Detener</button> <!-- Botón para detener el temporizador -->
+    </div>
+  </div>
+
+  <!-- Archivos de sonido -->
+  <audio id="tick-sound" src="tick.mp3"></audio> <!-- Sonido de conteo -->
+  <audio id="end-sound" src="end.mp3"></audio> <!-- Sonido de fin del tiempo -->
+
+  <script src="js/app.js"></script>
+</body>
+</html>
